@@ -1,10 +1,13 @@
-let counting = false
 input.onButtonPressed(Button.A, function () {
     counting = true
+    basic.showIcon(IconNames.SmallSquare)
 })
 input.onButtonPressed(Button.B, function () {
     counting = false
+    basic.showIcon(IconNames.No)
 })
+let counting = false
+counting = false
 loops.everyInterval(100, function () {
     if (counting == true) {
         datalogger.log(
