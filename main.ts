@@ -2,6 +2,9 @@ input.onButtonPressed(Button.A, function () {
     counting = true
     basic.showIcon(IconNames.SmallSquare)
 })
+input.onButtonPressed(Button.AB, function () {
+    datalogger.deleteLog(datalogger.DeleteType.Full)
+})
 input.onButtonPressed(Button.B, function () {
     counting = false
     basic.showIcon(IconNames.No)
