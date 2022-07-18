@@ -13,8 +13,7 @@ loops.everyInterval(100, function () {
         datalogger.log(
         datalogger.createCV("x", input.acceleration(Dimension.X)),
         datalogger.createCV("y", input.acceleration(Dimension.Y)),
-        datalogger.createCV("z", input.acceleration(Dimension.Z)),
-        datalogger.createCV("s", input.acceleration(Dimension.Strength))
+        datalogger.createCV("z", input.acceleration(Dimension.Z))
         )
     }
 })
